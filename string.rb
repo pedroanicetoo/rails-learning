@@ -17,3 +17,18 @@ puts text
 
 puts text.gsub!("Otavio", "O melhor curso!")
 puts text
+
+txt = "Maria Marli"
+puts txt.object_id
+txt = txt + " de Oliveira"
+puts txt.object_id
+
+txt = "Maria Marli"
+puts txt.object_id
+txt = txt << " de Oliveira"
+puts txt.object_id
+
+h = {:a => 123, :b => "PEDRO" }
+puts h
+h1 = {a: 123, b: "PEDRO" }
+puts h1
