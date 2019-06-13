@@ -25,6 +25,10 @@ class Venda
     
         puts ">Digite o nome do produto..."
         produto = gets.chomp
+        while(produto != "PS3" && produto != "PS4")
+           puts "Produto Incorreto, por favor, digite novamente!"
+           produto = gets.chomp
+        end
         
         puts "Para onde deseja enviar?"
         
@@ -32,6 +36,10 @@ class Venda
         
         puts "> Digite o estado"
         uf = gets.chomp
+        while(uf != "SP" && uf != "PE" && uf != "BA")
+           puts "Estado Incorreto, por favor, digite novamente!"
+           uf = gets.chomp
+        end
         
         puts "Calculando..."
         valor_final = calcular_valor_final(PRODUTOS[produto], uf)
